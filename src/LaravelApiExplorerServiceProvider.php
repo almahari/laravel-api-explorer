@@ -3,6 +3,7 @@
 namespace NetoJose\LaravelApiExplorer;
 
 use Illuminate\Support\ServiceProvider;
+use NetoJose\LaravelApiExplorer\Console\GeneratePostmanCollection;
 
 class LaravelApiExplorerServiceProvider extends ServiceProvider
 {
@@ -42,7 +43,7 @@ class LaravelApiExplorerServiceProvider extends ServiceProvider
             ], 'apiexplorer.views');*/
 
             // Registering package commands.
-            // $this->commands([]);
+             $this->commands([GeneratePostmanCollection::class]);
         }
     }
 

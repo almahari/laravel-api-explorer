@@ -12,4 +12,9 @@ return [
         '/'
     ],
 
+    'postman' => [
+        'disk' => 'public',
+        'collection_title' => 'UFS API v2',
+        'auth_middleware' => 'auth.jwt'
+    ]
 ];

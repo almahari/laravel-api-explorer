@@ -146,7 +146,8 @@ class LaravelApiExplorer
             'parameters' => $route->parameterNames(),
             'wheres' => $route->wheres ? $route->wheres : new \stdClass(),
             'request_handler' => $requestHandler,
-            'rules' => $rules
+            'rules' => $rules,
+            'prefix'=>$action['prefix']
         ];
     }
 
