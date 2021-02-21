@@ -14,7 +14,7 @@ return [
 
     'postman' => [
         'disk' => 'public',
-        'collection_title' => 'UFS API v2',
-        'auth_middleware' => 'auth.jwt'
+        'collection_title' => 'API Explorer',
+        'auth_middleware' => 'auth'
     ]
 ];
