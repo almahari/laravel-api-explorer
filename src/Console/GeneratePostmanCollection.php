@@ -59,7 +59,7 @@ class GeneratePostmanCollection extends Command
                     'url' => [
                         'raw' => '{{host}}' . $uri ,
                         'host' => '{{host}}',
-                        'path' => explode('/', $route['uri']),
+                        'path' => explode('/', $uri),
                     ]
 
                 ],
